@@ -8,7 +8,7 @@ window.onload = function() {
     var currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
     for (var i = 0; i < links.length; i++) {
-        if (links[i].closest('.button')) {
+        if (links[i].closest('.cta-button')) {
             continue;
         }
 
