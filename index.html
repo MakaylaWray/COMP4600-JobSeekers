@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href= ./assets/suitcase.png>
     <script src="./js/active-page.js"></script> 
+    <!-- Marquiz script start -->
+    <script>
+    (function(w, d, s, o){
+    var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.io/v2.js';j.onload = function() {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init(o);
+        });
+    };
+    d.head.insertBefore(j, d.head.firstElementChild);
+    })(window, document, 'script', {
+        host: '//quiz.marquiz.io',
+        region: 'us',
+        id: '69caba107ebec4001cd37ff1',
+        autoOpen: false,
+        autoOpenFreq: 'once',
+        openOnExit: false,
+        disableOnMobile: false
+    }
+    );
+    </script>
+    <!-- Marquiz script end -->
 </head>
 <body>
     <header>
@@ -22,7 +44,7 @@
             </ul>
         </nav>
     </header>
-    <section class="hero-section">
+    <section class="hero-section home-sections">
         <div class="hero-content">
             <div class = "hero-message">
                 <h1>Getting <span class="hero-your-span">your</span><br>
@@ -35,9 +57,9 @@
             <div class="hero-image" alt="Job Seekers Hero Image"></div>
         </div>
     </section>
-    <section class="feature-section">
-        <div class="feature-content">
-            <div class="feature-message">
+    <section class="feature-section home-sections">
+        <div class="feature-content section-content">
+            <div class="feature-message section-message">
                 <h2>everything you need</h2>
                 <p>to help you land that first job</p>
             </div>
@@ -69,6 +91,30 @@
                     </div>
                 </div>
             </div>
+    </section>
+    <section class="career-quiz-section home-sections">
+        <div class="quiz-content section-content">
+            <div class="quiz-message section-message">
+                <h2>not sure where to start?</h2>
+                <p>take a quick career quiz</p>
+            </div>
+            <div class="quiz-form-container">
+                <div data-marquiz-id="69caba107ebec4001cd37ff1"></div>
+                <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '69caba107ebec4001cd37ff1', buttonText: 'Start', bgColor: '#e94b3f', textColor: '#ffffff', rounded: true, shadow: 'rgba(233, 75, 63, 0.5)', blicked: true, fixed: false, buttonOnMobile: true, disableOnMobile: false, width: '1000', radius: '25', fullWidth: false})</script>
+            </div>
+        </div>
+    </section>
+        <section class="resume-form-section home-sections">
+        <div class="resume-form-content section-content">
+            <div class="quiz-message section-message">
+                <h2>Already have a resume?<br>Submit it for feedback </h2>
+            </div>
+            <div class="form-container">
+                <p>Upload File</p>
+                <form class="resume-form">
+                </form>
+            </div>
+        <div>
     </section>
 </body>
 </html>
