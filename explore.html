@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href= ./assets/suitcase.png>
     <script src="./js/active-page.js"></script> 
+    <!-- Marquiz script start -->
+    <script>
+    (function(w, d, s, o){
+    var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.io/v2.js';j.onload = function() {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init(o);
+        });
+    };
+    d.head.insertBefore(j, d.head.firstElementChild);
+    })(window, document, 'script', {
+        host: '//quiz.marquiz.io',
+        region: 'us',
+        id: '69caba107ebec4001cd37ff1',
+        autoOpen: false,
+        autoOpenFreq: 'once',
+        openOnExit: false,
+        disableOnMobile: false
+    }
+    );
+    </script>
+    <!-- Marquiz script end -->
 </head>
 <body>
     <header>
@@ -22,5 +44,49 @@
             </ul>
         </nav>
     </header>
+    <section class="subpage-hero">
+        <div class="subpage-hero-content">
+            <div class = "subpage-hero-message">
+                <h1><span class="subpage-hero-span">explore</span><br>career paths</h1>
+                <p>Discover roles based on your <br>interests, skills, and goals.</p>
+            </div>
+            <div class="explore-hero-image"></div>
+        </div>
+    </section>
+    <section class="career-section">
+        <div class="feature-content section-content">
+            <div class="feature-message section-message">
+                <h2>Career Paths</h2>
+                <p>Learn about the different fields in the world</p>
+            </div>
+            <div class="career-cards-container">
+                <div class="career-cards-top">
+                    <div class="career-card"></div>
+                    <div class="career-card"></div>
+                    <div class="career-card"></div>
+                </div>
+                <div class="career-cards-btm">
+                    <div class="career-card"></div>
+                    <div class="career-card"></div>
+                    <div class="career-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="career-quiz-section home-sections">
+        <div class="quiz-content section-content">
+            <div class="quiz-message section-message">
+                <h2>not sure where to start?</h2>
+                <p>take a quick career quiz</p>
+            </div>
+            <div class="quiz-form-container">
+                <div data-marquiz-id="69caba107ebec4001cd37ff1"></div>
+                <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '69caba107ebec4001cd37ff1', buttonText: 'Start', bgColor: '#e94b3f', textColor: '#ffffff', rounded: true, shadow: 'rgba(233, 75, 63, 0.5)', blicked: true, fixed: false, buttonOnMobile: true, disableOnMobile: false, width: '1000', radius: '25', fullWidth: false})</script>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 </html>
